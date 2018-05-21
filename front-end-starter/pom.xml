@@ -4,27 +4,17 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ebay.exams</groupId>
-	<artifactId>reactor-parent</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<artifactId>frontend-starter</artifactId>
+	<version>1.0</version>
+	<packaging>jar</packaging>
 
-	<name>reactor-exams</name>
+	<name>frontend-starter</name>
 	<description>Demo project for Spring Boot</description>
-
-
-	<modules>
-		<module>theology</module>
-		<module>examinator</module>
-		<module>mathematic</module>
-		<module>discovery-service-eurika</module>
-		<module>front-end-starter</module>
-	</modules>
-
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.8.RELEASE</version>
+		<version>2.0.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -35,21 +25,9 @@
 	</properties>
 
 	<dependencies>
-
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka</artifactId>
-			<version>1.4.4.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
 		<dependency>
@@ -63,15 +41,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 
 
 
