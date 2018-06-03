@@ -4,23 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.ebay.exams</groupId>
-	<artifactId>reactor-parent</artifactId>
+	<artifactId>config-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 
-	<name>reactor-exams</name>
+	<name>config-server</name>
 	<description>Demo project for Spring Boot</description>
-
-
-	<modules>
-		<module>theology</module>
-		<module>examinator</module>
-		<module>mathematic</module>
-		<module>discovery-service-eurika</module>
-		<module>front-end-starter</module>
-		<module>config-server</module>
-	</modules>
-
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -33,48 +22,34 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<spring-cloud.version>Finchley.BUILD-SNAPSHOT</spring-cloud.version>
 	</properties>
 
 	<dependencies>
-
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-config-client</artifactId>
-			<version>1.3.0.RELEASE</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
+			<artifactId>spring-cloud-config-server</artifactId>
 			<version>1.3.0.RELEASE</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 			<version>1.3.0.RELEASE</version>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
 
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+
 
 	<build>
 		<plugins>

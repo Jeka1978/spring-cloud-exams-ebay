@@ -2,6 +2,7 @@ package com.ebay.exams.services;
 
 import com.ebay.exams.model.Exercise;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
 
 import java.util.Random;
@@ -10,6 +11,7 @@ import java.util.Random;
  * @author Evgeny Borisov
  */
 @Service
+@RefreshScope
 public class MathServiceImpl implements MathService {
 
     @Value("${math.max}")
